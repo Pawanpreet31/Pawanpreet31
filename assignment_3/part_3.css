@@ -43,3 +43,41 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    font-family: "PT Serif", serif;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+
+  h1, h2{
+    font-family: "PT Sans", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+
+  section h2 + p{
+    text-indent: 20px;
+  }
