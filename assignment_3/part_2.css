@@ -8,3 +8,9 @@ html {
   
   /* Your CSS below here */
 
+  div{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+  }
+
