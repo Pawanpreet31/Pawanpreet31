@@ -107,3 +107,31 @@
     width: 10px;
     height: 10px;
   }
+
+  li{
+    line-height: 20px;
+  }
+
+  ul{
+   list-style-type: circle; 
+  }
+
+
+  nav ul{
+    list-style: none;
+  }
+
+  nav ul li{
+    margin-bottom: 15px;
+  }
+
+  nav ul li a{
+    display: block;
+    background-color: white;
+    color: #a66;
+    border: 2px solid rgb(141, 110, 110);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+  }
+  
