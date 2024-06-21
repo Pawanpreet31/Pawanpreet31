@@ -21,6 +21,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   nav {
@@ -52,4 +54,6 @@ body {
 
   .feature {
       width: 200px;
+      float: left;
+      margin-right: 15px;
   }
