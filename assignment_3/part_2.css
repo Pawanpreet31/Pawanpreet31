@@ -12,5 +12,8 @@ html {
     width: 200px;
     height: 150px;
     background-color: rgb(255, 0, 0);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
   }
 
