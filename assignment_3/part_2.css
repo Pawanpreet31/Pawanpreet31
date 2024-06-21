@@ -20,5 +20,8 @@ html {
     font-size: 1.125rem;
     color: white;
     text-shadow: 1px 1px black;
+    border-radius: 20px;
+    border: 1px solid rgb(216, 13, 13);
+    background: linear-gradient(to right bottom, rgba(255, 0, 0, 0.6) 0%, rgba(240, 10, 10, 0.8) 30%, rgba(190, 0, 0, 1) 100%);
   }
 
