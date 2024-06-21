@@ -1,5 +1,10 @@
 html {
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   
   /* Your CSS below here */
+
