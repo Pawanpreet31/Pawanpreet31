@@ -1,3 +1,8 @@
+// set up variable for score counter
+const refParagraph = document.querySelector('p');
+let scoreCounter = 0;
+
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
@@ -107,10 +112,11 @@ class EvilCircle extends Shape{
 
     draw() {
         ctx.beginPath();
+        ctx.lineWidth = 3;
         ctx.strokeStyle = this.color;
         ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
         ctx.stroke();
-        ctx.lineWidth = 3;
+        
     }
 
     checkBounds() {
@@ -140,6 +146,10 @@ class EvilCircle extends Shape{
     
             if (distance < this.size + ball.size) {
               ball.exists = false;
+
+            // Decrement the count and display the updated number of balls each time the evil circle eats a ball 
+              scoreCounter--;
+              refParagraph.textContent = "Ball count: " + scoreCounter;
             }
           }
         }
@@ -163,6 +173,10 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+
+// Increment the count and display the updated number of balls each time a ball is added to the scene.
+  scoreCounter++;
+  refParagraph.textContent = "Ball count: " + scoreCounter;
 }
 
 const evilCircle = new EvilCircle(random(0, width), random(0, height));
@@ -180,10 +194,10 @@ function loop() {
 
   }
 
-  evilBall.draw();
-  evilBall.checkBounds();
-  evilBall.collisionDetect();
-  requestAnimationFrame(loop);
+    evilCircle.draw();
+    evilCircle.checkBounds();
+    evilCircle.collisionDetect();
+    requestAnimationFrame(loop);
 }
 
 loop();
