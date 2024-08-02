@@ -1,4 +1,3 @@
-// 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
@@ -28,3 +27,35 @@ const insertZ = [
     'melted into a puddle on the sidewalk', 
     'turned into a slug and crawled away'
 ];
+
+
+randomize.addEventListener('click', result);
+
+function result() {
+
+    let newStory = storyText;
+
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
+  
+
+    newStory = newStory.replace(':insertx:',xItem);
+    newStory = newStory.replace(':inserty:',yItem);
+    newStory = newStory.replace(':insertz:',zItem);
+    newStory = newStory.replace(':insertx:',xItem);
+
+  if(customName.value !== '') {
+    const name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    const weight = Math.round(300);
+    const temperature =  Math.round(94);
+
+  }
+
+  story.textContent = ;
+  story.style.visibility = 'visible';
+}
